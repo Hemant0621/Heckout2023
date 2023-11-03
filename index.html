@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+        function menu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display == "none" || menu.style.display == "") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
 </head>
-<body>
-    <h1 class="underline text-red-700">
-        Hello world!
-      </h1>
+
+<body class="bg-primary1">
+    <nav>
+        <div class="text-white list-none flex text-xm lg:text-sm justify-between">
+            <div class="menu text-white w-8 mx-4 my-3 cursor-pointer lg:hidden" onclick="menu()">
+                <img src="img/menu.png" alt="img" />
+            </div>
+            <div id="menu" class="left hidden absolute mt-16 mx-3 lg:flex lg:relative lg:mt-0">
+                <li class="home m-1 my-5 cursor-pointer lg:mx-5"><a href="/#">Home</a></li>
+                <li class="about m-1 my-5 cursor-pointer lg:mx-5"><a href="/about">about us</a></li>
+                <li class="customer m-1 my-5 cursor-pointer lg:mx-5"><a href="/CustomerSupport">Customer Support</a></li>
+            </div>
+            <div class="right flex mr-6">
+                <div class="search flex mr-20">
+                    <div
+                        class="input lg:flex hidden bg-white rounded-lg h-10 mt-4 mr-3 text-xs justify-between lg:text-sm">
+                        <input class="h-8 mt-1 ml-1 outline-none text-black text-lg" type="text" />
+                        <img class="bg-white w-7 h-7 p-1 mt-1 mr-3" src="img/compass.png" alt="" />
+                    </div>
+                    <div class="input lg:flex hidden bg-white rounded-lg h-10 mt-4 ml-3 justify-between">
+                        <input class="h-8 mt-1 ml-1 outline-none text-black text-lg" type="text" />
+                        <img class="bg-white w-7 h-7 p-1 mt-1 mr-3" src="img/search-interface-symbol.png" alt="" />
+                    </div>
+                </div>
+                <li class="mx-4 my-4 cursor-pointer">Register</li>
+                <li class="mx-4 my-4 cursor-pointer">Log in</li>
+            </div>
+        </div>
+        <div class="bg-primary2 h-1 mt-4"></div>
+    </nav>
+    <section class="flex justify-center lg:block">
+        <div class="imgcontainer lg:flex lg:mt-14 lg:mx-8">
+            <div class="group">
+                <img class="lg:h-64 mt-6" src="img/Rectangle 4.png" alt="">
+                <img class="lg:h-64 lg:ml-12 mt-2" src="img/Rectangle 6.png" alt="">
+
+            </div>
+            <div class="group">
+                <img class="lg:h-64 lg:ml-3 mt-5 lg:mt-0" src="img/Rectangle 5.png" alt="">
+                <img class="lg:h-64 ml-3 mt-5" src="img/Rectangle 7.png" alt="">
+            </div>
+            <img class="hidden lg:block lg:h-96 lg:mt-20 lg:ml-20" src="img/image 1.png" alt="">
+        </div>
+        <button class=" hidden lg:block absolute text-white bg-primary2 left-[76.5%] py-1 top-[51%] text-xl w-[8rem] rounded-xl"><a href="/signin">Explore</a></button>
+    </section>
 </body>
+
 </html>
