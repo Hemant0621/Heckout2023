@@ -4,25 +4,118 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login Page</title>
-        <link rel="stylesheet" href="style.css">
         <script src="login.js"></script>
+        <style>
+            body {
+                    background-color:#000B42;
+                    color: #fff; /* White text */
+                    font-family: 'Times New Roman', Times, serif;
+                    text-align: center;
+                }
+    
+                h1 {
+                    color: #fff; /* White text for the heading */
+                }
+    
+                form {
+                    background-color: black; /* Dark gray background */
+                    color: #fff; /* White text */
+                    border: 1px solid #ccc;
+                    padding: 25px;
+                    max-width: 275px;
+                    border-radius: 5%;
+                    margin: auto;
+                }
+    
+                label {
+                    display: block;
+                    text-align: left;
+                }
+    
+                input[type="text"],
+                input[type="password"] {
+                    width: 90%;
+                    padding: 10px;
+                    margin-bottom: 35px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+    
+                input[type="submit"] {
+                    background-color: #0074d9;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+    
+                input[type="submit"]:hover {
+                    background-color: #0056a0;
+                }
+    
+                #error-message {
+                    color: #ff0000;
+                    margin-bottom: 10px;
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: #0074d9;
+                }
+    
+                img{
+                    width: 159px;
+                    height: 100px;
+                    top: -184px;
+                    margin-left: -90%;
+                    background-color: transparent;
+                    border-radius: 0%;
+                }
+        </style>
     </head>
-    <body class="bg-gray-200 flex items-center justify-center h-screen">
-        <div class="bg-white rounded shadow p-8 w-80">
-            <h2 class="text-2xl font-bold mb-4">Login</h2>
-            <p id="error-message" class="text-red-500 font-semibold mt-4"></p>
-            <form id="login-form" class="space-y-4" action="#" method="post">
-                <div class="space-y-1">
-                    <label for="email" class="text-sm font-semibold">Email:</label>
-                    <input type="email" id="email" name="email" class="w-full p-2 border rounded bg-gray-100" placeholder="email" required>
-                </div>
-                <div class="space-y-1">
-                    <label for="password" class="text-sm font-semibold">Password:</label>
-                    <input type="password" id="password" name="password" class="w-full p-2 border rounded bg-gray-100" placeholder="password" required>
-                </div>
-                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Login</button>
-                <a class="text-red-400" href="registration.html">registration</a>
-            </form>
+    <body>
+        <img src="img/title.jpg" alt="title">
+        <br><br>
+
+        <div id="error-message">
+            <!-- <?php if (isset($_GET['error']) && $_GET['error'] === 'invalid') {
+                echo "Invalid username or password. Please try again.";
+            }
+            ?> -->
         </div>
+        <form id="login-form">
+            <div>
+                <h1>Login</h1>
+                <label for="user_email_or_username">Username or Email</label>
+                <input type="text" id="email" name="email" required><br><br>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit" value="login">Login</button>
+                <p id="error-message" ></p>
+            </div>
+        </form>
+        <p>Don't have an account? <a href="registration.html">Sign up</a></p>
     </body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hackout</title>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="title.png">
+    <meta property="og:url" content="https://sign_in.com">
+    <meta property="og:locale" content="en_IND">
+    <meta property="og:site_name" content="https://sign_in.com">
+    
+
+
+
 </html>

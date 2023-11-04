@@ -43,7 +43,7 @@
         <div class="ml-5 text-white">
             <h1 class="text-white text-3xl mt-5">Filter</h1>
             <div>
-                <h1 class="text-white text-xl mt-5">Radius of work </h1>
+                <h1 class="text-white text-xl mt-5">Radius of work(Km)</h1>
                 <input type="range" min="1" max="100" value="10" class="slider w-56 mt-5 "  step="1">
                 <div class="ml-1">
                     <span class="text-white mr-14">0</span>
@@ -51,30 +51,39 @@
                     <span class="text-white ml-12">100</span>
                 </div>
                 <h1 class="text-white text-xl mt-3">Wages</h1>
-                <h2 class="text-white text-lg mt-3">Min</h2>
-                <input type="range" min="1" max="100" value="10" class="slider w-56 mt-5 "  step="1">
+                <h2 class="text-white text-lg mt-3">Min(Rs)</h2>
+                <input type="range" min="1" max="5000" value="10" class="slider w-56 mt-5 "  step="1">
                 <div class="ml-1">
                     <span class="text-white mr-14">0</span>
                     <span class="mx-auto">Value: <output class="value"></output></span>
-                    <span class="text-white ml-12">100</span>
+                    <span class="text-white ml-12">5000</span>
                 </div>
                 
-                <h2 class="text-white text-lg mt-3">Max </h2>
-                <input type="range" min="1" max="100" value="10" class="slider w-56 mt-5 "  step="1">
+                <h2 class="text-white text-lg mt-3">Max(Rs)</h2>
+                <input type="range" min="1" max="5000" value="10" class="slider w-56 mt-5 "  step="1">
                 <div class="ml-1">
                     <span class="text-white mr-14">0</span>
                     <span class="mx-auto">Value: <output class="value"></output></span>
-                    <span class="text-white ml-12">100</span>
+                    <span class="text-white ml-12">5000</span>
                 </div>
                 
                 <h1 class="text-white text-xl mt-5">Time Duration</h1>
-                <select name="dropdown" id="key" class="mx-10x w-56 mt-3 text-black">
-                    <option value="1">1h</option>
-                    <option value="2">2h</option>
-                    <option value="3">3h</option>
-                    <option value="4">4h</option>
-                    <option value="5">5h</option>
-                </select>
+                <div >
+                    <div class=" mt-2 outline-none text-black flex mr-5">
+                        <input class="outline-none"  type="text" placeholder="min">
+                        <select name="time" id="timemin">
+                            <option value="pm">PM</option>
+                            <option value="am">AM</option>
+                        </select>
+                    </div>
+                    <div class=" mt-2 rounded-sm outline-none text-black flex">
+                        <input class="outline-none"  type="text" placeholder="max">
+                        <select name="time" id="timemax">
+                            <option value="pm">PM</option>
+                            <option value="am">AM</option>
+                        </select>
+                    </div>
+                </div>
                 <h1 class="text-white text-xl mt-5">Types of job</h1>
                 <div class="mt-3">
                     <input type="checkbox" id="job1" name="vehicle1" value="Bike">
