@@ -16,7 +16,9 @@
                 menu.style.display = "none";
             }
         }
+
     </script>
+    
 </head>
 
 <body class="bg-[#0E0E0E]">
@@ -50,17 +52,30 @@
     <section class="flex justify-center lg:block">
         <div class="imgcontainer lg:flex lg:mt-14 lg:mx-8">
             <div class="group">
-                <img class="lg:h-64 mt-6 transform scale-100 hover:scale-105 hover:blur-[.2rem] transition-transform duration-300 ease-in-out" src="img/Rectangle 4.png" alt="">
-                <img class="lg:h-64 lg:ml-12 mt-2 transform scale-100 hover:scale-105 hover:blur-[.2rem] transition-transform duration-300 ease-in-out" src="img/Rectangle 6.png" alt="">
-
+                <div class="relative ">
+                    <img class="img lg:h-64 mt-6 transform scale-100 hover:scale-105 hover:blur-[.1rem] transition-transform duration-300 ease-in-out" src="img/Rectangle 4.png" alt="">
+                    <div class="des absolute text-white bottom-0 left-[-1.70%] hidden bg-[#A511FF] w-[103%] h-[25%] text-center">text here</div>
+                </div>
+                <div class="relative ">
+                    <img class="img lg:h-64 lg:ml-12 mt-2 transform scale-100 hover:scale-105 hover:blur-[.2rem] transition-transform duration-300 ease-in-out" src="img/Rectangle 6.png" alt="">
+                    <div class="des absolute text-white bottom-0 left-[8.5%] hidden bg-[#A511FF] w-[93%] h-[25%] text-center">text here</div>
+                </div>
+                
             </div>
             <div class="group">
-                <img class="lg:h-64 lg:ml-3 mt-5 lg:mt-0 transform scale-100 hover:scale-105 hover:blur-[.2rem] transition-transform duration-300 ease-in-out" src="img/Rectangle 5.png" alt="">
-                <img class="lg:h-64 ml-3 mt-5 transform scale-100 hover:scale-105 hover:blur-[.2rem] transition-transform duration-300 ease-in-out" src="img/Rectangle 7.png" alt="">
+                <div class="relative "> 
+                    <img class="img lg:h-64 lg:ml-3 mt-5 lg:mt-1 transform scale-100 hover:scale-105 hover:blur-[.2rem] transition-transform duration-300 ease-in-out" src="img/Rectangle 5.png" alt="">
+                    <div class="des absolute text-white bottom-[-.2rem]  hidden bg-[#A511FF] w-[76%] h-[25%] text-center">text here</div>
+                </div>
+                <div class="relative ">
+                    <img class="img lg:h-64 ml-3 mt-4 transform scale-100 hover:scale-105 hover:blur-[.2rem] transition-transform duration-300 ease-in-out" src="img/Rectangle 7.png" alt="">
+                    <div class="des absolute text-white bottom-[-.4rem] hidden bg-[#A511FF] w-[103%] h-[25%] text-center">text here</div>
+                </div>
             </div>
-            <img class="hidden lg:block lg:h-96 lg:mt-20 lg:ml-20" src="img/image 1.png" alt="">
+            <img class="hidden lg:block lg:h-96 lg:mt-20 lg:ml-20 transition-transform duration-[500s] ease-linear animate-spin-slow" src="img/image_1-removebg-preview.png" alt="">
+        
+            <button class=" hidden lg:block absolute text-[#FFFFFF] bg-[#A511FF] right-[15%] top-[51%] py-1 text-xl w-[8rem] h-10 rounded-xl"><a href="registration.html">Explore</a></button>
         </div>
-        <button class=" hidden lg:block absolute text-[#FFFFFF] bg-[#A511FF] left-[76.5%] py-1 top-[51%] text-xl w-[8rem] rounded-xl"><a href="registration.html">Explore</a></button>
     </section>
 </body>
 
